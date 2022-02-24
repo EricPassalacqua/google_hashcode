@@ -14,7 +14,7 @@ Parser::Parser(const std::string &filename) : filename_(filename)
 
 std::string Parser::open()
 {
-    std:string line;
+    std::string line;
     std::ifstream ifs(filename_, std::ifstream::in);
     char c = ifs.get();
     std::cout << filename_ << std::endl;
