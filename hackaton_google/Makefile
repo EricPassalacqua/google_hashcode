@@ -6,7 +6,10 @@
 ##
 
 SRC	=	main.cpp \
-		src/Parser.cpp
+		src/split.cpp \
+		src/Parser.cpp \
+		src/Contributor.cpp \
+		src/Project.cpp
 
 NAME	=	program
 

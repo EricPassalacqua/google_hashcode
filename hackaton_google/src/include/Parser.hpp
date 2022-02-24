@@ -9,6 +9,9 @@
 #define PARSER_HPP_
 
 #include "hashcode.hpp"
+#include "Contributor.hpp"
+#include "Project.hpp"
+
 
 class Parser
 {
@@ -17,7 +20,12 @@ public:
     std::string open();
     ~Parser();
 private:
+    std::vector<Contributor *> contributors_;
     std::string filename_;
+    std::ifstream ifs_;
+    std::vector<std::string> content_;
+    int contributorNumber_;
+    int projectNumber_;
 
 };
 

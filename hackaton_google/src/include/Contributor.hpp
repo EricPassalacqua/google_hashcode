@@ -17,6 +17,7 @@ public:
     Contributor(const std::string &name);
     ~Contributor();
     void push_skills(std::string skillname, int level);
+    std::string &getName();
 
 private:
     std::map<std::string, int> skills_;

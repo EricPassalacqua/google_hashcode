@@ -18,6 +18,11 @@ void Contributor::push_skills(std::string skillname, int level)
     skills_.insert(std::pair<std::string, int>(skillname, level));
 }
 
+std::string &Contributor::getName()
+{
+    return (_name);
+}
+
 Contributor::~Contributor()
 {
     
